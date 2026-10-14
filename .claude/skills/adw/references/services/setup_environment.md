@@ -15,7 +15,7 @@ skills: [env:start]
 
 1. Si el caso no tiene rama, asígnale una a partir de la petición y regístrala. La rama no cambia durante el caso.
 2. Sitúa la copia de trabajo en la rama, al día con su versión publicada. Si la rama todavía no existe, créala desde la base.
-3. Arranca el entorno con el comando del proyecto `env:start` (`.claude/commands/env/start.md`) y comprueba que responde.
+3. Arranca el entorno con el comando del proyecto `env:start` (`.claude/commands/env/start.md`) y comprueba que responde. Si otro proyecto ocupa un puerto, `env:start` publica este entorno en otro libre: un puerto ajeno ocupado no es un fallo. Nunca pares procesos ni contenedores de otros proyectos.
 
 ## Resultado
 

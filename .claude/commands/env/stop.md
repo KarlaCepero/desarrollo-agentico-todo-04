@@ -27,7 +27,7 @@ Si no hay nada en marcha, informa de ello y termina.
 
 ## Comprobación
 
-`http://localhost:3000/healthz` ya no responde y nada de este repositorio sigue escuchando en los puertos `3000` ni `5432`.
+Antes de parar, anota los puertos publicados (`docker compose port app 3000` y `docker compose port db 5432`; en modo host, el `PORT` de `buffalo dev`). Después, `/healthz` ya no responde en ese puerto y nada de este repositorio sigue escuchando en ellos. Si otro proyecto escucha en `3000` o `5432`, no es de este repositorio: déjalo intacto.
 
 ## Resultado
 
